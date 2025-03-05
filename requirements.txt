@@ -1,1 +1,5 @@
 Flask==3.0.3
+duckduckgo-images-api>=1.0.0
+duckduckgo_search>=7.5.0
+duckduckgo_search_api>=0.1.5
+duckduckpy>=0.2
