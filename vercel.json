@@ -1,5 +1,18 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index" }
-  ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "gen",
+      "dest": "app.py"
+    }
+  ],
+  "env": {
+    "MODEL_NAME": "t5-base"
+  }
 }
